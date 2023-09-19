@@ -9,8 +9,12 @@ Visual novels are a form of digital interactive fiction that combine storytellin
 
 We've incorporated two major models into this project:
 
-1. **llama-2-13b-chat.ggmlv3.q2_K.bin**
-2. **stable-diffusion-xl-base-1.0**
+```
+llama-2-13b-chat.ggmlv3.q2_K.bin
+```
+```
+stable-diffusion-xl-base-1.0
+```
 
 Thanks to 4-bit quantized models, we can efficiently run the latest Language Model models like Llama 2 13B on GPUs with less than 16 GB VRAM.
 
@@ -29,8 +33,9 @@ Follow these steps to get started with the Pygame VN Generator:
     ```
 3. Host and run the following two notebooks on a GPU instance. Ensure that both notebooks collectively use less than 30 GB of VRAM. Make sure you have an NGROK account set up for Auth tokens.
 
-1. Colab: Llama Server
-2. Colab: Stable Diffusion
+[Colab: Llama Server](https://colab.research.google.com/drive/1HhLWckttv5A6kcC64MnmXnUVckSKIZ6Z#scrollTo=4bKQIsIq-d8y)
+
+[Colab: Stable Diffusion](https://colab.research.google.com/drive/1rR2rwZjIgVQ41nnZaJvpZcn7fPHSp35c)
 
 4. Once the servers are up and running, add the file you want to convert into a visual novel to the main directory. By default, it will run 'The Bet.txt', you can use other formats like .docx and .pdf as well. Change the following line in VN_pygame.py to your file name and ngrok llama and SD servers:
 ```
@@ -44,3 +49,4 @@ file_path = "The Bet.txt"
 ```
 python VN_pygame.py
 ```
+
