@@ -29,8 +29,9 @@ Follow these steps to get started with the Pygame VN Generator:
     ```
 3. Host and run the following two notebooks on a GPU instance. Ensure that both notebooks collectively use less than 30 GB of VRAM. Make sure you have an NGROK account set up for Auth tokens.
 
-Colab: Llama Server
-Colab: Stable Diffusion
+1. Colab: Llama Server
+2. Colab: Stable Diffusion
+
 4. Once the servers are up and running, add the file you want to convert into a visual novel to the main directory. By default, it will run 'The Bet.txt', you can use other formats like .docx and .pdf as well. Change the following line in VN_pygame.py to your file name and ngrok llama and SD servers:
 ```
 colab_ngrok_url_llama = "http://de5f-34-125-218-8.ngrok-free.app"
