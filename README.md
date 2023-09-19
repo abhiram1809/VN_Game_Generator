@@ -21,7 +21,7 @@ Follow these steps to get started with the Pygame VN Generator:
 1. Clone the GitHub repository or download it:
 
    ```
-   git clone https://github.com/abhiram1809/repo_name
+   git clone https://github.com/abhiram1809/VM_Game_Generator
    ```
 2. Install the required libraries:
     ```
