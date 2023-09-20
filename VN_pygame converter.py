@@ -11,8 +11,8 @@ from All_Functions import (
 )
 from imager2 import Images_for_Chunks
 
-colab_ngrok_url_llama = "http://de5f-34-125-218-8.ngrok-free.app"
-colab_ngrok_SD = "http://87c3-34-29-116-85.ngrok-free.app/"
+colab_ngrok_url_llama = "http://874e-34-125-61-151.ngrok-free.app"
+colab_ngrok_SD = "http://203a-34-142-160-96.ngrok-free.app/"
 file_path = "The Bet.txt"
 
 Result_text = llama_request(file_path, colab_ngrok_url_llama)

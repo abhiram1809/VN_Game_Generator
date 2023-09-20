@@ -57,7 +57,7 @@ def process_stars(input_string):
 
 
 def delete_lines_with_prefixes(input_string):
-    prefixes = ["Note:", "USER:", "ASSISTANT:"]
+    prefixes = ["Note:", "USER:", "ASSISTANT:", "User:", "Assistant:"]
     lines = input_string.split("\n")
 
     # Initialize an empty list to store non-matching lines
