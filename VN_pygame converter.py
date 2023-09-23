@@ -11,6 +11,22 @@ from All_Functions import (
 )
 from imager2 import Images_for_Chunks
 
+
+# Function to delete the contents of a but not the folder itself
+def delete_contents(folder):
+    for file in os.listdir(folder):
+        file_path = os.path.join(folder, file)
+        try:
+            if os.path.isfile(file_path):
+                os.unlink(file_path)
+        except Exception as e:
+            print(e)
+
+
+delete_contents("VN_Images")
+delete_contents("generated_images")
+
+
 colab_ngrok_url_llama = "http://56c4-34-125-169-239.ngrok-free.app"
 colab_ngrok_SD = "http://59d3-34-125-203-124.ngrok-free.app/"
 file_path = "The Bet.txt"
