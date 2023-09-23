@@ -44,9 +44,9 @@ colab_ngrok_SD = "http://87c3-34-29-116-85.ngrok-free.app/"
 file_path = "The Bet.txt"
 ```
 
-5. Run VN_pygame.py:
+5. Run VN_pygame converter.py:
 
 ```
-python VN_pygame.py
+python 'VN_pygame converter.py'
 ```
 
