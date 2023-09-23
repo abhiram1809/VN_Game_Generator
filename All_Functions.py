@@ -34,14 +34,21 @@ def extract_prompts_and_Process_results(result):
     for i in range(len(string_list)):
         lines = string_list[i].split("\n")
         lines = lines[2:]
+        for line in lines:
+            if "AI" in line:
+                lines.remove(line)
         result_string = "\n".join(lines)
         if len(result_string) < 750:
             pass
         else:
             processed_result.append(result_string)
             lines = result_string.split("\n")
-            lines = lines[:5]
+            for line in lines:
+                if "AI" in line:
+                    lines.remove(line)
+            lines = lines[:4]
             result_string = "\n".join(lines)
+            result_string += ", Retro Style, Colour Painting, Digital Old Vintage Art"
             Image_prompt_inputs.append(result_string)
     return Image_prompt_inputs, processed_result
 
