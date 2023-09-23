@@ -25,5 +25,4 @@ def Images_for_Chunks(text, chunk_number, image_path):
         chunk_text = " ".join(chunk)
         wrapped_text = textwrap.fill(chunk_text, width=70)
         chunk_draw.text(text_position, wrapped_text, font=myFont, fill="black")
-        chunk_img.show()
         chunk_img.save(f"VN_Images/out_{chunk_number}_{index}.png")
